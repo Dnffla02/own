@@ -1,0 +1,824 @@
+Background (배경 이미지 관련 속성)
+
+background: background의 여러 가지 속성을 간단하게 한번에 선언하여 사용할수 있다.
+background-color
+background-images
+background-repeat
+background-attachment
+background-position
+
+background-attachment: 페이지 스크롤을 할 때, 페이지와 함께 스크롤되게 할 것인지 아니면 배경 이미지는 고정되게할 것인지를 설정할 수 있다.
+scroll
+fixed
+
+background-color: 특정 요소의 배경 색상을 지정할 수 있다.
+color-rgb
+color-hex
+color-name
+transparent
+
+background-images: 배경 이미지를 지정할 수 있다.
+url(URL)
+none
+
+background-position: 배경 이미지가 시작되는 위치를 조정할 수 있다.
+top left
+top center
+top right
+center left
+center center
+center right
+bottom left
+bottom center
+bottom right
+x% y%
+xpos ypos
+
+background-repeat: 배경이미지를 반복할 것인지 하나만 보여줄것인지 설정할 수 있다. 배경 이미지 반복 시 어느 방향으로 반복할 것인지도 설정할 수 있다.
+repeat
+repeat-x
+repeat-y
+no-repeat
+
+Border (테두리 관련 속성): border: border의 여러 가지 속성을 간단하게 한번에선언하여 사용할 수 있다.
+border-width
+border-style
+border-color
+border-bottom
+
+border-bottom: border-bottom(아래쪽 테두리)의 여러가지 속성을 간단하게 한번에 선언할 수 있다.
+border-bottom-width
+border-style
+border-color
+
+border-bottom-color: border-bottom의 색상을 설정할 수 있다.
+border-color
+
+border-bottom-style: border-bottom의 스타일을 설정할 수 있다.
+border-style
+
+border-bottom-width: border-bottom의 너비를 설정할 수 있다.
+thin
+medium
+thick
+length
+
+border-color: 상하좌우 모든 테두리의 색상을 1개에서 4개까지 한번에 설정할 수 있다.
+color
+
+border-left: border-left(왼쪽테두리)의 여러가지 속성을 간단하게 한번에 선언하여 사용할 수 있다.
+border-left-width
+border-style
+border-color
+
+border-left-color: border-left의 색상을 설정할 수 있다,
+border-color
+
+border-left-style: border-left의 스타일은 설정할 수 있다.
+border-style
+
+border-left-width: 
+border-left의 너비를 설정할 수 있다.
+thin
+medium
+trick
+lenght
+
+border-right: border-right(오른쪽테두리)의 여러가지 속성을 간단하게 한번에 선언하여 사용할 수 있다.
+border-bottom-width
+bordrt-style
+border-color
+border-right-color
+border-right의 색상을 설정할 수 있다.
+border-color
+border-right-style
+border-right의 스타일을 설정할 수 있다.
+border-style
+border-right-width
+border-right의 너비를 설정할 수 있다.
+thin
+medium
+thick
+length
+border-style
+상하좌우 모든 테두리의 모양을 1개에서 4개까지
+스타일을 한번에 설정할 수 있다.
+none
+hidden
+dotted
+dashed
+solid
+double
+groove
+ridge
+inset
+outset
+border-top
+border-top(위쪽테두리)의 여러가지 속성을
+간단하게 한번에 선언하여 사용할 수 있다.
+berder-top-width
+border-style
+border-color
+border-top-color
+border-top의 색상을 설정할 수 있다.
+border-color
+border-top-style
+border-top의 스타일을 설정할 수 있다.
+border-style
+border-top-width
+border-top의 너비를 설정할 수 있다.
+thin
+medium
+thick
+length
+border-width
+상하좌우 모든 테두리의 너비를 한번에
+설정할 수 있다.
+thin
+medium
+thick
+length
+
+
+CLASSIFICATION (분류)
+
+clear
+바로 이전의 요소에서 선언된 float 속성을
+해제한다.
+left
+right
+both
+none
+cursor
+마우스 포인터의 모양을 지정할 수 있다.
+url
+auto
+crosshair
+default
+pointer
+move
+e-resize
+ne-resize
+nw-resize
+n-resize
+se-resize
+s-resize
+w-resize
+text
+wait
+help
+display
+요소를 보일 것인지, 감출 것인지를 지정할 수 있다.
+요소를 보이게 할 경우 어떤 방식으로 보이게 할 것
+인지 설정할 수 있다.
+none
+inline
+block
+list-item
+run-in
+compact
+marker
+table
+inline-table
+table-row-group
+table-header-group
+table-footer-group
+table-row
+table-column-group
+table-column
+table-cell
+table-caption
+float
+텍스트나 이미지 등의 요소를 흐르게 만들어,
+인접해 있는 다른 요소와 함께 흐르게 만들수 있다.
+left
+right
+none
+position
+요소를 어떤 방식으로 위치시킬 것인지
+지정할 수 있다.
+static
+relative
+absolute
+fixed
+visibility
+요소를 보이거나 감출 수 있다.
+visible
+hidden
+collapse
+
+
+Dimesion (각종 치수)
+
+height
+요소의 높이를 지정할 수 있습니다.
+auto
+length
+%
+line-height
+문장의 줄 간격을 지정할 수 있습니다.
+normal
+number
+ length
+%
+max-height
+요소의 최대 제한 높이를 지정한다.
+none
+length
+%
+max-width
+요소의 최대 제한 너비를 지정한다.
+none
+length
+%
+min-height
+요소의 최소 높이를 지정한다.
+length
+%
+min-width
+요소의 죄소 제한 너비를 지정한다.
+length
+%
+width
+요소의 너비를 지정한다.
+auto
+%
+length
+Font (글꼴)
+ 성
+설 명
+값
+font
+폰트를 설정하기 위해 필요한 다양한 속성의
+값들을 줄여서 간편하게 선언할 수 있다.
+font-style
+font-variant
+font-weight
+font-size/line-height
+font-family
+caption
+icon
+menu
+message-box
+small-caption
+status-barfont-family
+family name
+폰트의 종류를 지정할 수 있다.
+generic-family
+ont-size
+폰트의 크기를 지정할 수 있다.
+xx-small
+x-small
+small
+medium
+large
+x-large
+xx-large
+smaller
+lager
+length
+%
+font-size-adjust
+소문자를 기준으로 글자 크기를 조정할 수 있다.
+font-size에서 지정된 글자의 높이와 소문자 x의
+비율로 글자 크기를 재지정한다.
+none
+number
+font-stretch
+글자의 선명도, 즉 장평을 설정할 수 있다.
+normal
+wider
+narrower
+ultra-condensed
+extra-condensed
+condensed
+semi-condensed
+semi-expanded
+expanded
+extra-expanded
+ultra-expanded
+font-style
+폰트를 기울임체로 사용할 수 있다.
+normal
+ltalic
+oblique
+font-variant
+소문자를 작은 대문자로 만들 수 있다.
+normal
+small-caps
+font-weight
+폰트의 두께를 지정할 수 있다.
+normal
+bold
+bolder
+lighter
+100
+200
+300
+400
+500
+600
+700
+800
+900
+
+
+Generated Content (콘텐츠 생성)
+
+content
+요소의 앞(:before)과 뒤(:after)에 어떤 내용을
+생성할 것인지 지정할 수 있다.
+string
+url
+counter(name)
+counter
+(name,list-style-type)
+counters(name,string)
+counters(name,string,
+list-style-type)
+attr(X)
+open-quote
+close-quote
+no-open-quote
+no-close-quote
+counter-increment
+요소 요소에 번호를 매길 수 있다. 번호는 카운터로
+자동으로 증가하는 특성을 가지고 있다.
+앞과 뒤 선택자와 함께 사용된다.
+none
+identifier number
+counter-reset
+앞서 만든 카운터의 값을 초기화 한다.
+none
+dentifier number
+quotes string
+요소 앞뒤에 인용부호를 주가할 수 있다.
+none
+List and Marker (리스트와 표시)
+ 성
+설 명
+값
+list-style
+여러가지 리스트 스타일을 줄여서 한 번에
+지정할 수 있다.
+list-style-type
+list-style-position
+list-style-image
+list-style-image
+리스트 앞에 붙는 아이콘을 임의의 이미지로
+지정해 줄 수 있다.
+none
+url
+list-style-position
+리스트 앞에 붙는 블릿을 리스트에 포함해서
+표현할 것인지, 리스트에 포함하지 않고 표현할
+것인지 지정할 수 있다.
+inside
+outside
+list-style-position
+리스트 앞에 붙는 블릿 아이콘의 모양을
+설정 할 수 있다.
+none
+disc
+circle
+square
+decimal
+decimal-leading-zero
+lower-roman
+upper-roman
+lower-alpha
+upper-alpha
+lower-latin
+upper-latin
+hebrew
+armenian
+georgian
+cjk-ideographic
+hiragana
+katakana
+hiragana-iroha
+katakana-iroha
+marker-offset
+항목표시자와 블럭간의 간격 지정
+auto
+length
+ 
+Margin (마진 - 바깥여백)
+ 성
+설 명
+값
+margin
+마진 속성을 한꺼번에 줄여서 사용할 수 있다.
+margin-top
+margin-right
+margin-bottom
+margin-left
+margin-bottom
+요소의 아래쪽 마진을 줄일 수 있다.
+auto
+length
+%
+margin-left
+요소의 왼쪽 마진을 줄일 수 있다.
+margin-right
+요소의 오른쪽 마진을 줄일 수 있다.
+margin-top
+요소의 위쪽 마진을 줄일 수 있다.
+Outlines (윤곽)
+ 성
+설 명
+값
+outline
+요소의 윤곽을 디자인 할 수 있다. border와 달리
+화면 배치나 크기에 영향을 주지 않는다.
+outline-color
+outline-style
+outline-width
+outline-color
+요소의 윤곽 색상을 지정 할 수 있다.
+color
+invert
+outline-style
+요소의 윤곽 스타일을 지정 할 수 있다.
+none
+dotted
+dashed
+solid
+double
+groove
+ridge
+inset
+outset
+outline-width
+요소의 윤곽 너비를 지정할 수 있다.
+thin
+medium
+thick
+length
+Padding (패딩 - 안쪽여백)
+ 성
+설 명
+값
+padding
+패딩 속성을 한꺼번에 줄여서 사용할 수 있다.
+padding-top
+
+padding-right
+
+padding-bottom
+
+padding-left
+
+padding-bottom
+
+요소의 아래쪽 패딩을 줄 수 있다.
+
+length
+
+%
+
+padding-left
+
+요소의 왼쪽 패딩을 줄 수 있다.
+
+padding-right
+
+요소의 오른쪽 패딩을 줄 수 있다.
+
+padding-top
+
+요소의 위쪽 패딩을 줄 수 있따.
+
+Positioning (위치제어)
+속 성
+
+설 명
+
+값
+
+bottom
+
+지정된 요소의 위치를 요소의 아래쪽 기준으로
+
+지정한다.
+
+auto
+
+%
+
+length
+
+left
+
+지정된 요소의 위치를 왼쪽 기준으로 지정한다.
+
+clip
+
+지정된 수치만큼 4각형의 각 부분을 잘라낸다.
+
+shape
+
+auto
+
+overflow
+
+컨텐츠가 요소의 크기보다 커져서 넘치게 되면
+
+이를 보이게 할 것인지 혹은 감출 것인지 등에
+
+대한 설정을 할 수 있다.
+
+visible
+
+hidden
+
+scroll
+
+auto
+
+position
+
+요소가 위치할 방식을 지정한다.
+
+요소가 자연스럽게 흐르게 할 것인지, 공중에
+
+둥둥 뜨게 할 것인지 등을 지정할 수 있다.
+
+static
+
+relative
+
+absolute
+
+fixed
+
+right
+
+지정된 요소의 위치를 오른쪽 기준으로 지정한다.
+
+auto
+
+%
+
+length
+
+top
+
+지정된 요소의 위치를 위쪽 기준으로 지정한다.
+
+vertical-align
+
+요소안에 들어가는 요소들에 대해서 세로정렬을
+
+지정 할 수 있다.
+
+baseline
+
+sub
+
+super
+
+top
+
+text-top
+
+middle
+
+bottom
+
+text-bottom
+
+length
+
+%
+
+z-index
+
+요소를 쌓아 올릴 수 있다. 이 설정을 통해서 요소끼리
+
+겹처 보일 경우 어떤 요소가 더 위에 보이게 할 것인지
+
+설정 할 수 있다.
+
+auto
+
+number
+
+Table (표)
+속 성
+
+설 명
+
+값
+
+border-collapse
+
+이웃하는 셀의 테두리를 겹쳐서 보이게 하거나,
+
+떨어져 보이게 할 수 있다.
+
+collapse
+
+separate
+
+border-spacing
+
+인접한 테두리의 간격을 조성할 수 있다.
+
+length
+
+caption-side
+
+테이블의 제목의 위치를 테이블의 상하좌우
+
+어디에 위치시킬 것인지 지정할 수 있다.
+
+top
+
+bottom
+
+left
+
+right
+
+empty-cells
+
+내용이 없는 셀을 보이게 할 것인지 감출 것인지
+
+여부를 설정 할 수 있다.
+
+show
+
+hide
+
+table-layout
+
+테이블과 셀 등의 요소의 크기를 고정하여 문장이
+
+길어도 늘어나거나 줄어들지 않게 한다.
+
+auto
+
+fixed
+
+TEXT (문자)
+속 성
+
+설 명
+
+값
+
+color
+
+텍스트의 색상을 설정할 수 있다.
+
+color
+
+direction
+
+텍스트가 위치할 가로 방향을 지정할 수 있다,
+
+왼쪽→오른쪽, 혹은 오른쪽→왼쪽
+
+ltr
+
+rtl
+
+line-height
+
+문장과 문장 사이의 간격을 지정 할 수 있다.
+
+normal
+
+number
+
+length
+
+%
+
+letter-spacing
+
+글자 하나하나의 간격을 줄이거나 늘릴 수 있다.
+
+normal
+
+length
+
+text-align
+
+요소 안의 텍스트 정렬을 지정 할 수 있다.
+
+left
+
+tight
+
+center
+
+justify
+
+text-decoration
+
+텍스트를 꾸밀 수 있다.
+
+none
+
+underline
+
+overline
+
+line-through
+
+text-indent
+
+문장의 첫행을 들여쓰기 할 수 있다.
+
+length
+
+%
+
+text-shadow
+
+텍스트에 그림자 효과를 줄 수 있다.
+
+none
+
+color
+
+length
+
+text-transform
+
+소문자를 대문자로, 대문자를 소문자로
+
+설정 할 수 있다.
+
+none
+
+capitalize
+
+uppercase
+
+lowercase
+
+unicode-bidi
+
+글자 하나하나의 방향을 뒤집거나 되돌릴 수 있다.
+
+normal
+
+embed
+
+bidi-override
+
+white-space
+
+스페이스바(공백)을 자유롭게 지정할 수 있다.
+
+normal
+
+pre
+
+nowrap
+
+word-spacing
+
+단어와 단어 사이의 간격을 줄이거나 늘릴 수 있다.
+
+normal
+
+nowrap
+
+Pseudo-Classes (유사클래스, 가상클래스)
+속 성
+
+설 명
+
+: active
+
+활동적인 요소의 특별한 스타일을 적용한다.
+
+: focus
+
+요소가 포커스에가 있을때 특별한 스타일을 적용한다.
+
+: hover
+
+마우스가 가리킬때 요소에 특별한 스타일을 적용한다.
+
+: link
+
+방문하지 않은 링크에 특별한 스타일을 적용한다.
+
+: visited
+
+방문한 링크에 특별한 스타일을 적용한다.
+
+: first-child
+
+다른 요소의 first-child에 특별한 스타일을 적용한다.
+
+: lang
+
+구체적인 요소에 원하는 언어를 적용한다.
+
+ 
