@@ -1,0 +1,43 @@
+
+
+#include <stdio.h>
+#include <string>
+
+class User{
+private:
+  int num;
+  string name;
+public:
+  User();
+  User(int getNum, string getName);
+  ~User();
+  minMax_algorithm();
+};
+
+User::User(){}
+
+User::User(int getNum, string getName){
+  num=getNum;
+  name=getName;
+}
+
+User::~User(){}
+
+User::minMaxalgorithm(){
+
+}
+
+int main(){
+  int a;
+  cin>>a;
+  int number;
+  string name;
+  User user[100001];
+  for(int i=0;i<a;i++){
+    cin>>number;
+    cin>>name;
+    user[i].User(number,name);
+  }
+  minMaxalgorithm
+  return 0;
+}
