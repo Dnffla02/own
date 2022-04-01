@@ -1,0 +1,36 @@
+// ConsoleApplication4.cpp : 콘솔 응용 프로그램에 대한 진입점을 정의합니다.
+//
+
+#include "stdafx.h"
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main(){
+	int a;
+	cin >> a;
+	char b[26];
+	char c;
+	string d;
+	int count = 0;
+	for (int i = 0; i < a; i++){
+		cin >> d;
+		c = d[0];
+		b[0] = { 0, };
+		b[d[0]+97] = 1;
+		for (int j = 1; j <= (int)d.length(); j++){
+			if (c != d[j]+97){
+				c = d[j]+97;
+				if (b[d[j] + 97] == 1)
+					break;
+				b[d[j] + 97] = 1;
+			}// 단어가 바뀌면
+			if (j == d.length())
+				count++;
+		}
+	}
+	cout << count;
+	return 0;
+}
