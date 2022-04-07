@@ -1,0 +1,23 @@
+#include <iostream>
+#include <random>
+#include <time.h>
+#include <algorithm>
+#define length 200000
+
+using namespace std;
+
+int main() {
+	int i, a[length];
+	srand(time(NULL));
+	while (true) {
+		for (i = 0; i < length; i++) {
+			a[i] = rand();
+		}
+		sort(a, a + length);
+		for (i = 0; i < length; i++) {
+			cout.width(6);
+			cout << a[i];
+		}
+	}
+	return 0;
+}
