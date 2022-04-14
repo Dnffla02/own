@@ -1,5 +1,5 @@
 <?php
-    $con = mysqli_connect('localhost','root','Qlalfdlsep1!','Local instance MySQL80');
+    $con = mysqli_connect('localhost','root','','Local instance MySQL80');
 
     $sql = "SELECT * FROM userDb";
     $Result = mysqli_query($con,$query);
