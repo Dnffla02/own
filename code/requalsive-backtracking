@@ -1,0 +1,74 @@
+#include <iostream>
+#include <random>
+#include <time.h>
+#include <Windows.h>
+
+#define ai 50
+
+using namespace std;
+
+
+void backTracking(int x, int y, int(*a)[ai]);
+void print(int(*a)[ai]);
+
+void backTracking(int x, int y, int(*a)[ai]) {
+	if (x != ai-1 && a[x + 1][y] == 1) {
+		print(a);
+		a[x + 1][y] = 0;
+		backTracking(x + 1, y, a);
+	}
+	if (x != 0 && a[x - 1][y] == 1) {
+		print(a);
+		a[x - 1][y] = 0;
+		backTracking(x - 1, y, a);
+	}
+	if (y != ai-1 && a[x][y + 1] == 1) {
+		print(a);
+		a[x][y+1] = 0;
+		backTracking(x, y+1, a);
+	}
+	if (y != 0 && a[x][y - 1] == 1) {
+		print(a);
+		a[x][y - 1] = 0;
+		backTracking(x, y-1, a);
+	}
+}
+
+void print(int(*a)[ai]) {
+	int i,j;
+	string b="";
+	b += "\n\n";
+	for (i = 0; i < ai; i++) {
+		for (j = 0; j < ai; j++) {
+			if (a[i][j] == 1) {
+				b+= "■";
+			}
+			else {
+				b+= "□";
+			}
+		}
+		b+="\n";
+	}
+	cout << b << endl;
+}
+
+int main() {
+	srand(time(NULL));
+	int posX, posY, a[ai][ai], i, j, b = ai;
+	for (i = 0; i < b; i++) {
+		for (j = 0; j < b; j++) {
+			a[i][j] = { 1, };
+		}
+		cout << endl;
+	}
+	cin >> posX >> posY;
+	for (i = 10; i < b - 10; i++) {
+		a[i][b/2] = 0;
+		a[b / 2][i] = 0;
+		a[b / 2 + 10][i] = 0;
+		a[i][b / 2 + 10] = 0;
+	}
+	a[posX][posY] = 0;
+	backTracking(posX, posY, a);
+	return 0;
+}
